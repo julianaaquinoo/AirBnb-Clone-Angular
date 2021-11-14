@@ -1,0 +1,15 @@
+<p>filter-loc-list works!</p>
+
+<h2>Acomodacoes</h2>
+<h2>*****</h2>
+<div class="acomodacao" *ngFor="let acomodacao of acomodacoes | async">
+  <div *ngIf="achou(acomodacao) && valido(acomodacao)">
+    <h3>Id: {{ acomodacao.id }}</h3>
+    <h3>Tipo: {{ acomodacao.tipo }}</h3>
+    <h3>Capacidade: {{ acomodacao.capacidade }}</h3>
+    <h3>Localizacao: {{ acomodacao.localizacao }}</h3>
+    <h3>Permite animais? {{ acomodacao.permiteAnimais }}</h3>
+    <h3>Tem Estacionamento? {{ acomodacao.temEstacionamento }}</h3>
+    <h2>*****</h2>
+  </div>
+</div>

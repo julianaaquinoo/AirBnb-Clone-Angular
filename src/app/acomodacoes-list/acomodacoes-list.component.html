@@ -1,0 +1,15 @@
+<h2>Acomodacoes</h2>
+<h2>******</h2>
+<div class="acomodacao" *ngFor="let acomodacao of acomodacoes | async">
+  <div *ngIf="achou(acomodacao)">
+    <h3>
+      <a>Id: {{ acomodacao.id }}</a>
+    </h3>
+    <h2>Tipo: {{ acomodacao.tipo }}</h2>
+    <h2>Capacidade: {{ acomodacao.capacidade }}</h2>
+    <h2>Localizacao: {{ acomodacao.localizacao }}</h2>
+    <h2>Permite animais? {{ acomodacao.permiteAnimais }}</h2>
+    <h2>Tem estacionamento? {{ acomodacao.temEstacionamento }}</h2>
+    <h2>*********</h2>
+  </div>
+</div>
